@@ -1,0 +1,83 @@
+<header class="animate__animated animate__fadeIn animate__faster">
+    <div class="sombra">
+        <div class="contenedor">
+            <div class="textos">
+                <span class="icono"><img src="../../../assets/img/iconoLosCastanos.png" alt=""></span>
+                <h1 class="nombre">Lúpulo <span>Los Castaños</span></h1>
+                <h3>Un sueño con pasión transformado en emprendimiento, todo comienza con un rizoma de lúpulos para llegar a una rica Cerveza.</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="acerca-de animate__animated animate__fadeIn animate__faster" id="acerca-de">
+    <div class="contenedor">
+        <div class="foto">
+            <img src="../../../assets/img/cosechando.jpg" alt="">
+        </div>
+        <article>
+            <div>
+                <h3>¿Quíenes somos?</h3>
+                <p>Somos una pequeña empresa agrícola dedicada al cultivo, producción y comercialización de Lúpulo de la comuna de Quilaco VIII Región.</p>
+                <p>Esta empresa familiar lleva trabajando desde el 2015 adquiriendo experiencia a lo largo del tiempo en la producción de lupulos, nuestro compromiso es mantener y mejorar la alta calidad de nuestros productos para el exigente mercado de
+                    la cerveza artesanal en Chile.</p>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="lupulos">
+    <div class="contenedor">
+        <h3 class="titulo" id="lupulos">Lúpulos</h3>
+        <p class="lupulos-descripcion">Todo buen cervecero sabe que el lúpulo juega una parte fundamental en la elaboración de cerveza artesanal como ingrediente ya que es fundamental, otorga amargor, aroma y estabiliza la espuma.</p>
+        <div class="contenedor-lupulos">
+            <div *ngFor="let lupulo of productoService.lupulo" class="lupulo">
+                <div class="thumb">
+                    <img [src]="lupulo.url" alt="">
+                </div>
+                <div class="descripcion">
+                    <p class="nombre">{{ lupulo.nombre}}</p>
+                    <p class="nota">{{ lupulo.frase }}</p>
+                </div>
+                <div class="button">
+                    <button class="btn">Ver mas información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="galeria" id="galeria">
+    <div class="foto">
+        <img src="../../../assets/img/1.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/2.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/3.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/4.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/5.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/6.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/7.jpg" alt="">
+    </div>
+
+    <div class="foto">
+        <img src="../../../assets/img/8.jpg" alt="">
+    </div>
+</section>

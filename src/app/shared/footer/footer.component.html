@@ -1,0 +1,19 @@
+<footer>
+    <div class="titulo">
+        <h4>Síguenos!</h4>
+        <h5>Estamos en Facebook, instagram y Youtube</h5>
+    </div>
+
+    <div class="contenedor">
+        <a [href]="_infoService.info.facebook" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a [href]="_infoService.info.youtube" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+        <a [href]="_infoService.info.instagram" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="copyright">
+
+        <p><span>© {{ anio }} </span> {{ _infoService.info.titulo }} - Todos los derechos reservados</p>
+    </div>
+</footer>

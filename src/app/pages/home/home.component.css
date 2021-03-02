@@ -1,0 +1,332 @@
+    /* ----- ----- HEADER ----- ----- */
+    
+    header {
+        width: 100%;
+        background: url("../../../assets/img/headerCastanosGradiente.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center 0;
+    }
+    
+    header .contenedor {
+        position: relative;
+        height: 700px;
+        overflow: visible;
+    }
+    
+    .sombra {
+        background: rgba(0, 0, 0, .5);
+    }
+    
+    header .textos {
+        width: 100%;
+        color: #fff;
+        position: absolute;
+        top: 55%;
+        margin-top: -70px;
+    }
+    
+    header span img {
+        width: 150px;
+    }
+    
+    header .icono {
+        float: left;
+        margin-right: 10px;
+    }
+    
+    header .textos .nombre {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    header .textos span {
+        font-weight: 300;
+    }
+    
+    header .textos h3 {
+        font-weight: 300;
+        font-size: 20px;
+        font-style: italic;
+    }
+    /* ----- -----ACERCA DE ----- ----- */
+    
+    .acerca-de .contenedor {
+        overflow: visible;
+        position: relative;
+    }
+    
+    .acerca-de .foto {
+        width: 80%;
+        position: absolute;
+        left: 0;
+        top: -50px;
+        z-index: 0;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+    }
+    
+    .acerca-de .foto img {
+        vertical-align: top;
+        width: 100%;
+    }
+    
+    .acerca-de article {
+        color: #000;
+        position: relative;
+        z-index: 1;
+        padding: 40px;
+        width: 50%;
+        top: 300px;
+        float: right;
+        /* background: url('../../assets/img/fondoAcerca.jpg'); */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)), url('../../assets/img/fondoAcerca.jpg'); */
+        background-size: cover;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+    }
+    
+    .acerca-de article h3 {
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    
+    .acerca-de article p {
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    /* ----- -----LUPULOS ----- ----- */
+    
+    .lupulos {
+        padding-top: 560px;
+        margin-bottom: 50px;
+    }
+    
+    .lupulos .titulo {
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gray;
+    }
+    
+    .lupulos .lupulos-descripcion {
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    
+    .lupulos .contenedor-lupulos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* margin-top: 30px; */
+    }
+    
+    .lupulos .contenedor-lupulos .lupulo {
+        width: 30%;
+        height: 520px;
+        border: 2px solid #6A6D70;
+        /* margin-bottom: 30px; */
+        border-radius: 10px;
+        padding: 10px;
+        transition: all .3s ease-in-out;
+        margin: 0px 10px;
+        background-color: #f6f6f6;
+    }
+    
+    .lupulos .contenedor-lupulos .lupulo:hover {
+        margin-top: -20px;
+        box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.4);
+    }
+    
+    .lupulos .lupulo .thumb img {
+        width: 180px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: 5px solid #2A9134;
+    }
+    
+    .lupulos .lupulo .descripcion .nombre {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #2A9134;
+        text-align: center;
+    }
+    
+    .lupulos .lupulo .descripcion {
+        /* margin-bottom: 60px; */
+        /* text-align: center; */
+        height: 200px;
+        line-height: 25px;
+    }
+    
+    .lupulo .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .lupulo .button .btn {
+        /* margin-top: 30px; */
+        padding: 10px 40px;
+        color: #000;
+        border-radius: 20px;
+        border: 2px solid #4CAF50;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all .3s ease;
+    }
+    
+    .lupulo .button .btn:hover {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+    
+    .lupulos .lupulo .descripcion .caracteristicas .bold {
+        font-weight: 600;
+    }
+    /* ----- -----GALERIA ----- ----- */
+    
+    .galeria {
+        overflow: hidden;
+        padding-bottom: 70px;
+    }
+    
+    .galeria .foto {
+        width: 25%;
+        float: left;
+        margin: 20px 0px;
+        padding: 0px 20px;
+    }
+    
+    .galeria .foto img {
+        width: 100%;
+        vertical-align: top;
+        opacity: .7;
+        border: 2px solid #cfcfcf;
+        padding: 5px;
+    }
+    
+    .galeria .foto img:hover {
+        opacity: 1;
+        transition: all .3s ease;
+    }
+    /* MEDIA QUERIES */
+    
+    @media screen and (max-width: 980px) {
+        /* QUERIES HEADER */
+        header .menu {
+            margin-left: 0px;
+            text-align: center;
+        }
+        header .contenedor {
+            /* position: static; */
+            height: 400px;
+        }
+        header span img {
+            width: 100px;
+        }
+        header .textos {
+            /* position: static; */
+            /* margin: 100px 0; */
+            top: 65%;
+        }
+        header .menu a {
+            margin: 20px 20px;
+            font-size: 20px;
+        }
+        header .textos .nombre {
+            font-size: 30px;
+            margin-top: 18px;
+        }
+        header .textos h3 {
+            font-size: 12px;
+        }
+        /* ----- ----- QUERIES MAIN ACERCA-DE ----- ----- */
+        .acerca-de .foto {
+            width: 100%;
+            position: relative;
+        }
+        .acerca-de article {
+            width: 100%;
+            top: -50px;
+            transform: translate(0px, 0);
+        }
+        .acerca-de article h3 {
+            font-size: 30px;
+        }
+        /* ----- ----- QUERIES MAIN LUPULOS ----- ----- */
+        .lupulos {
+            padding-top: 300px;
+        }
+        .lupulos .lupulo .thumb img {
+            width: 150px;
+        }
+        .lupulos .lupulo .descripcion p {
+            font-size: 14px;
+        }
+        .lupulos .contenedor-lupulos {
+            flex-direction: column;
+        }
+        .lupulos .contenedor-lupulos .lupulo {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        /* ----- ----- QUERIES MAIN GALERIA ----- ----- */
+        .galeria .foto {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        /* ----- ----- QUERIES HEADER ----- ----- */
+        header .contenedor {
+            height: 500px;
+        }
+        header .icono img {
+            /* display: none; */
+            width: 80px;
+        }
+        header .textos {
+            top: 45%;
+        }
+        header .menu a {
+            font-size: 15px;
+        }
+        header .textos .nombre {
+            margin-top: 0px;
+        }
+        /* ----- ----- QUERIES ACERCA-DE ----- ----- */
+        .acerca-de article h3 {
+            font-size: 30px;
+        }
+        /* ----- ----- QUERIES MAIN LUPULOS ----- ----- */
+        .lupulos .contenedor-lupulos {
+            flex-direction: column;
+        }
+        .lupulos .contenedor-lupulos .lupulo {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        .lupulos .lupulos-descripcion {
+            font-size: 14px;
+        }
+        .lupulos .contenedor-lupulos .lupulo:hover {
+            margin-top: 0px;
+        }
+    }

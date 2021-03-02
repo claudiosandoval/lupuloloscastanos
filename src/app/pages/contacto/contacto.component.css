@@ -1,0 +1,119 @@
+p {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ubicacion {
+    /* background: #ccc; */
+    margin-bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
+
+.contenedor-ubicacion .titulo {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    top: 100%;
+    padding-top: 130px;
+}
+
+.contenedor-ubicacion .direccion .calle {
+    margin-bottom: 20px;
+}
+
+.direccion .correo {
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.horarios {
+    justify-content: center;
+}
+
+.horarios-semana {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.entre-semanas {
+    width: 40%;
+    float: left;
+}
+
+.fin-semanas {
+    width: 40%;
+    float: right;
+}
+
+.mapa {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contenedor-mapa {
+    border: 2px solid green;
+}
+
+.mapa iframe {
+    width: 600px;
+    height: 500px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+    .ubicacion {
+        float: none;
+        margin: auto;
+    }
+    .mapa {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .horarios-semana {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .entre-semanas {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .fin-semanas {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mapa iframe {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mapa iframe {
+        width: 300px;
+        height: 300px;
+    }
+}

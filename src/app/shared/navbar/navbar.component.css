@@ -1,0 +1,97 @@
+ul {
+    background-color: rgba(27, 31, 35, 0.9);
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 2px solid #2A9134;
+}
+
+.active a {
+    /* transform: translate(0px, -5px); */
+    transition: all 0.3s;
+    color: #2A9134 !important;
+}
+
+.menu {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 20px 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #2A9134;
+    transform: translate(0px, -10px);
+    transition: all 0.3s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    cursor: pointer;
+    line-height: 70px;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .menu {
+        background-color: rgba(27, 31, 35, 0.9);
+    }
+    .checkbtn {
+        display: block;
+        z-index: 1;
+    }
+    ul {
+        position: fixed;
+        /* width: 100%; */
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        left: -50%;
+        /* top: 20px; */
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    a:hover,
+    a:active {
+        background: none;
+        color: #2A9134;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}

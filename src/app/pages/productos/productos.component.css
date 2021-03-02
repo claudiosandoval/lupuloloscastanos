@@ -1,0 +1,105 @@
+.contenedor-producto {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 20%;
+    border: 1px solid #6A6D70;
+    border-radius: 5px;
+    height: 580px;
+    margin: 50px 37px;
+    padding: 20px;
+}
+
+.thumb {
+    margin-top: 5px;
+}
+
+.thumb img {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid #2A9134;
+}
+
+.nombre {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #2A9134;
+    text-align: center;
+}
+
+.descripcion {
+    height: 250px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.precio {
+    /* margin-top: 50px; */
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    padding: 10px 40px;
+    color: #000;
+    border-radius: 20px;
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+    .producto {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .contenedor-producto {
+        flex-direction: column;
+    }
+    .producto {
+        width: 40%;
+        margin: 5% 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor-producto {
+        flex-direction: column;
+    }
+    .producto {
+        width: 70%;
+        margin: 5% 15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-producto {
+        flex-direction: column;
+    }
+    .producto {
+        width: 90%;
+        margin: 5% 5%;
+    }
+}

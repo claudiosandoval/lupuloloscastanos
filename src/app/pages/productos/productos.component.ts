@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductoInterface } from 'src/app/interfaces/producto-interface';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { ProductosService } from 'src/app/services/productos.service';
 })
 export class ProductosComponent implements OnInit {
 
-  constructor(public productoService: ProductosService) { }
+  constructor(public ProductosService: ProductosService) { }
 
   ngOnInit(): void {
   }

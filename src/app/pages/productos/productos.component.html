@@ -1,17 +1,17 @@
-<app-loading *ngIf="productoService.cargando"></app-loading>
+<app-loading *ngIf="ProductosService.cargando"></app-loading>
 
-<div *ngIf="!productoService.cargando" class="contenedor-producto animate__animated animate__fadeIn">
-    <div *ngFor="let producto of productoService.lupulo" class="producto">
+<div *ngIf="!ProductosService.cargando" class="contenedor-producto animate__animated animate__fadeIn">
+    <div *ngFor="let productos of ProductosService.productos" class="producto">
         <div class="thumb">
-            <img [src]="producto.url" alt="">
+            <img [src]="productos.url" alt="">
         </div>
         <div class="descripcion">
-            <p class="nombre">{{ producto.nombre }}</p>
-            <p class="nota">{{ producto.frase }}</p>
+            <p class="nombre">{{ productos.nombre }}</p>
+            <p class="nota">{{ productos.frase }}</p>
         </div>
-        <p class="precio">{{ producto.precio }}</p>
+        <p class="precio">{{ productos.precio }}</p>
         <div class="button">
-            <button class="btn">Ver mas información</button>
+            <button routerLink="/producto/{{ productos.cod }}" class="btn">Ver mas información</button>
         </div>
     </div>
 </div>

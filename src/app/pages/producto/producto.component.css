@@ -1,0 +1,141 @@
+.displaynone {
+    display: none;
+}
+
+.contenedor-producto {
+    padding-top: 100px;
+    margin: 20px 100px;
+}
+
+.thumb {
+    float: left;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
+    padding-left: 80px;
+}
+
+.nombre {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.img-logo {
+    width: 40px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.nota {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.aroma {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.estilo {
+    padding-bottom: 20px;
+}
+
+.precio {
+    font-size: 30px;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.alfa {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.beta {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cantidad {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.disponible {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 90px;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.perfil-aromatico {
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.perfil-aromatico img {
+    width: 400px;
+    /* border: 1px solid green; */
+}
+
+@media screen and (max-width: 980px) {
+    .contenedor-producto {
+        margin: 20px 10px;
+    }
+    .button {
+        margin-bottom: 50px;
+    }
+    .producto {
+        display: flex;
+        flex-direction: column;
+    }
+    .nombre,
+    .nota,
+    .aroma,
+    .estilo,
+    .precio,
+    .alfa,
+    .beta,
+    .cantidad,
+    .disponible {
+        text-align: center;
+    }
+    .perfil-aromatico img {
+        width: 300px;
+    }
+    .perfil-aromatico {
+        text-align: center;
+        /* border: 1px solid green; */
+    }
+    .descripcion {
+        padding-left: 0px;
+    }
+}

@@ -28,10 +28,10 @@
 </section>
 <section class="lupulos">
     <div class="contenedor">
-        <h3 class="titulo" id="lupulos">Lúpulos</h3>
+        <h3 class="titulo" id="lupulos">Nuestros Lúpulos</h3>
         <p class="lupulos-descripcion">Todo buen cervecero sabe que el lúpulo juega una parte fundamental en la elaboración de cerveza artesanal como ingrediente ya que es fundamental, otorga amargor, aroma y estabiliza la espuma.</p>
         <div class="contenedor-lupulos">
-            <div *ngFor="let lupulo of productoService.lupulo" class="lupulo">
+            <div *ngFor="let lupulo of lupuloService.lupulo" class="lupulo">
                 <div class="thumb">
                     <img [src]="lupulo.url" alt="">
                 </div>

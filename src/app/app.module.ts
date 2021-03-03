@@ -13,6 +13,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { ProductoComponent } from './pages/producto/producto.component';
+import { ProximamenteComponent } from './shared/proximamente/proximamente.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductoComponent } from './pages/producto/producto.component';
     ContactoComponent,
     ProductosComponent,
     LoadingComponent,
-    ProductoComponent
+    ProductoComponent,
+    ProximamenteComponent
   ],
   imports: [
     BrowserModule,

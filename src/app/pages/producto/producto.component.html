@@ -8,8 +8,8 @@
         </div>
         <div class="descripcion">
             <p class="nombre">{{ productoCompleto.producto | uppercase }}
-                <img *ngIf="productoCompleto.categoria == 'lupulo'" class="img-logo" src="../../../assets/img/lupulo-icono.jpg" alt="">
-                <img *ngIf="productoCompleto.categoria == 'rizoma'" class="img-logo" src="../../../assets/img/rizoma-icono.jpg" alt="">
+                <img *ngIf="productoCompleto.categoria == 'lupulo'" class="img-logo" src="assets/img/lupulo-icono.jpg" alt="">
+                <img *ngIf="productoCompleto.categoria == 'rizoma'" class="img-logo" src="assets/img/rizoma-icono.jpg" alt="">
             </p>
             <p class="nota">{{ productoCompleto.descripcion }}</p>
             <p class="aroma"><strong>Aroma: </strong>{{ productoCompleto.aroma }}</p>
@@ -20,7 +20,7 @@
             <p class="disponible">{{ productoCompleto.disponibilidad}}</p>
             <p class="precio">$10.000</p>
             <div class="perfil-aromatico">
-                <img src="../../../assets/img/perfilaromatico.png" alt="">
+                <img src="assets/img/perfilaromatico.png" alt="">
             </div>
         </div>
     </div>

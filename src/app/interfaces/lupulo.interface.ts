@@ -3,4 +3,5 @@ export interface LupuloInterface {
   nombre?: string;
   url?: string;
   precio?: string;
+  cod?:string;
 }

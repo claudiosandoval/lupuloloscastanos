@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LupuloService } from 'src/app/services/lupulo.service';
+import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,8 @@ import { LupuloService } from 'src/app/services/lupulo.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public lupuloService: LupuloService) { }
+  constructor(public lupuloService: LupuloService,
+              public productoService: ProductosService) { }
 
   ngOnInit(): void {
   }

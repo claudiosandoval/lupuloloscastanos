@@ -30,8 +30,4 @@ export class ProductosService {
     //Se regresa la definicion de este obserbable, regresa el producto "completo con sus descripciones" el cual es seleccionado desde mas información
     return this.http.get(`https://lupuloloscastanos-default-rtdb.firebaseio.com/productos/${ id }.json`)
   }
-
-  getProducto(id: string) {
-    return this.http.get(`https://lupuloloscastanos-default-rtdb.firebaseio.com/productos_idx/${ id }.json`)
-  }
 }

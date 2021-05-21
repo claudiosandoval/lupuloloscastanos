@@ -56,6 +56,10 @@
         overflow: visible;
         position: relative;
     }
+
+    .acerca-de p {
+        text-align: justify ;
+    }
     
     .acerca-de .foto {
         width: 80%;
@@ -119,7 +123,11 @@
         font-weight: 300;
         line-height: 28px;
     }
-    
+
+    .lupulos .descripcion .nota {
+        text-align: center;
+    }
+
     .lupulos .contenedor-lupulos {
         display: flex;
         justify-content: space-between;

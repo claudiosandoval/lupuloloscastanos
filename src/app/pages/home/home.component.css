@@ -304,12 +304,20 @@
         header .contenedor {
             height: 500px;
         }
+
+        header .icono {
+            width: 100%;
+            text-align: center;
+        }
+
         header .icono img {
             /* display: none; */
-            width: 80px;
+            width: 120px;
         }
         header .textos {
-            top: 45%;
+            top: 40%;
+            width: 100%;
+            text-align: center;
         }
         header .menu a {
             font-size: 15px;
@@ -331,6 +339,11 @@
             margin-bottom: 20px;
             height: 100%;
         }
+
+        .lupulos .titulo {
+            font-size: 30px;
+        }
+
         .lupulos .lupulos-descripcion {
             font-size: 14px;
         }

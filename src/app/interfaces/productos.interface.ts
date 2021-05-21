@@ -5,4 +5,5 @@ export interface ProductosInterface {
   nombre?: string;
   precio?: string;
   url?: string;
+  estado?: string;
 }

@@ -13,5 +13,10 @@
         <div class="button">
             <button routerLink="/producto/{{ productos.cod }}" class="btn">Ver mas información</button>
         </div>
+        <div>
+            <p *ngIf="productos.estado == 'Disponible'" style="color:rgba(0, 128, 0, 0.822); text-align: center; margin-top: 20px;">{{ productos.estado}}<p>
+            <p *ngIf="productos.estado == 'No disponible'" style="color:rgba(255, 0, 0, 0.822); text-align: center; margin-top: 20px;">{{ productos.estado}}<p>
+            <p *ngIf="productos.estado == 'Próximamente'" style="color:gray; text-align: center; margin-top: 20px;">{{ productos.estado}}<p>
+        </div>
     </div>
 </div>

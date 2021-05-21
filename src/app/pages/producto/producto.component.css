@@ -117,18 +117,19 @@ img {
         display: flex;
         flex-direction: column;
     }
-    .nombre,
-    .nota,
-    .aroma,
-    .estilo,
-    .precio,
-    .alfa,
-    .beta,
-    .cantidad,
-    .disponible {
+
+    .descripcion .nombre, .nota {
         text-align: center;
     }
+
+    .descripcion .estilo, .aroma, .cantidad, .disponible, .alfa, .beta {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
     .perfil-aromatico img {
+        margin-top: 20px;
         width: 300px;
     }
     .perfil-aromatico {

@@ -1,6 +1,6 @@
 <app-proximamente *ngIf="!productoCompleto"></app-proximamente>
 
-<div *ngIf="productoCompleto" class="contenedor-producto animate__animated animate__fadeIn">
+<div *ngIf="productoCompleto" class="contenedor-producto animate__animated animate__fadeIn" style="height: 600px;">
     <div class="producto">
         <div class="thumb">
             <img [src]="productoCompleto.url" alt="">
@@ -22,9 +22,9 @@
             <p class="disponible" [ngStyle]="{'color':productoCompleto.disponibilidad == 'Disponible' ? 'green' : 'red' }">{{ productoCompleto.disponibilidad}}<p>
             <!-- <p class="disponible">{{ productoCompleto.disponibilidad}}</p> -->
             <p class="precio" style="display:none;">$10.000</p>
-            <div class="perfil-aromatico">
+            <!-- <div class="perfil-aromatico">
                 <img src="assets/img/perfilaromatico.png" alt="">
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

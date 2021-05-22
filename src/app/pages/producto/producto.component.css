@@ -4,7 +4,7 @@
 
 .contenedor-producto {
     padding-top: 100px;
-    margin: 20px 100px;
+    margin: 0px 100px;
 }
 
 .thumb {
@@ -108,7 +108,7 @@ img {
 
 @media screen and (max-width: 980px) {
     .contenedor-producto {
-        margin: 20px 10px;
+        margin: 0px 20px 300px 20px;
     }
     .button {
         margin-bottom: 50px;

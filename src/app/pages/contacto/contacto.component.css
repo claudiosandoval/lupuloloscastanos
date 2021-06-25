@@ -9,6 +9,7 @@ h4 {
 
 .ubicacion {
     /* background: #ccc; */
+    margin-top: 70px;
     margin-bottom: 40px;
     text-align: center;
     overflow: hidden;
@@ -67,8 +68,8 @@ h4 {
     width: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    margin-bottom: 20px;
+    padding-top: 150px;
+    margin-bottom: 100px;
 }
 
 .contenedor-mapa {

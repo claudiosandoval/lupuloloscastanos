@@ -20,7 +20,7 @@ export class ProductosService {
     this.http.get('https://lupuloloscastanos-default-rtdb.firebaseio.com/productos_idx.json')
       .subscribe( (resp: any) => {
         //regresa todos los productos de la pestaña productos
-        console.log(resp);
+        //console.log(resp);
         this.productos = resp;
         this.cargando = false
       });

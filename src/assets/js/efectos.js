@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $('.menu a').each(function(index) {
         $(this).css({
-            'top': '-200px'
+            'top': '-200px' 
         });
 
         $(this).animate({
@@ -29,4 +29,15 @@ $(document).ready(function() {
 
 
     //SCROLL ELEMENTOS MENU
+    var hamburguesa = document.getElementById("check");
+    var listaMenu = document.querySelector("nav.menu ul");
+    //console.log(listaMenu);
+    //console.log(hamburguesa);
+    listaMenu.addEventListener("click", function() {
+        //console.log("hola mundo");
+        hamburguesa.checked = false;
+    });
+
+
+
 });

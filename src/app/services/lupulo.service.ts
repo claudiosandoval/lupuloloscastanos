@@ -18,7 +18,7 @@ export class LupuloService {
   private cargarLupulo() {
     this.http.get('https://lupuloloscastanos-default-rtdb.firebaseio.com/lupulo.json')
       .subscribe( (resp: any) => {
-        console.log(resp);
+        //console.log(resp);
         //regresa los lupulos destacados
         this.lupulo = resp;
         this.cargando = false
